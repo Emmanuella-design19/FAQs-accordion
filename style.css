@@ -58,7 +58,7 @@ p {
 
 summary::after {
     content: "aaaaaa";
-    color: #11001c;
+    color: #86699000;
     width: 20px;
     height: 20px;
     background-image: url("icon-plus.svg");
