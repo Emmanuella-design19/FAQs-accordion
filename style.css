@@ -1,0 +1,98 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f7ebfd;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url("./background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    padding: 25px;
+
+}
+
+main {
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    padding: 24px;
+    margin-top: 100px;
+}
+
+h1 {
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+hr {
+    color: #ddd;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+}
+
+p {
+    color: gray;
+    padding: 24px;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+
+summary::after {
+    content: "aaaaaa";
+    color: rgba(128, 0, 128, 0.065);
+    width: 20px;
+    height: 20px;
+    background-image: url("icon-plus.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+summary:hover {
+    color: chocolate;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+details {
+    padding: 24px 8px;
+}
+
+details[open] > summary::after {
+    background-image: url("icon-minus.svg");
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image:url("background-pattern-mobile.svg") ;
+    }
+
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
