@@ -58,7 +58,7 @@ p {
 
 summary::after {
     content: "aaaaaa";
-    color: rgba(128, 0, 128, 0.065);
+    color: rgba(128, 0, 128, 0);
     width: 20px;
     height: 20px;
     background-image: url("icon-plus.svg");
@@ -75,7 +75,7 @@ summary:hover {
 .container {
     display: flex;
     gap: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 details {
