@@ -57,7 +57,7 @@ p {
 
 
 summary::after {
-    content: "aaaaaa";
+    content: "";
     color: rgba(128, 0, 128, 0);
     width: 20px;
     height: 20px;
